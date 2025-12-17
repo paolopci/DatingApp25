@@ -26,6 +26,9 @@
 - `dotnet restore` restores NuGet packages for the solution.
 - `dotnet build DatingApp25.sln` builds the full solution.
 - `dotnet run --project API/API.csproj` runs the API locally.
+- `dotnet user-secrets set "ConnectionStrings:ApiConnection" "<conn-string>" --project API/API.csproj` stores the local connection string securely.
+- `dotnet ef migrations add <Name> --project API/API.csproj` creates a new migration.
+- `dotnet ef database update --project API/API.csproj` applies migrations and creates the database if missing.
 - `dotnet test` runs test projects if/when they are added.
 
 ## Coding Style & Naming Conventions
@@ -48,3 +51,4 @@
 ## Configuration & Security Notes
 - Store environment-specific settings in `API/appsettings.Development.json`.
 - Do not commit secrets; prefer user secrets or environment variables.
+- Store the connection string in user secrets under `ConnectionStrings:ApiConnection`.
