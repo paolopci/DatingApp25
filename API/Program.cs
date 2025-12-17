@@ -1,6 +1,15 @@
+using API.Data;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddDbContext<AppDataContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("ApiConnection"));
+});
+
+
 
 builder.Services.AddControllers();
 
