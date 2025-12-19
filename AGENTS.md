@@ -25,6 +25,7 @@ Applicazione web full-stack con API ASP.NET Core e client Angular. Il back-end e
 - Client:
   - Angular CLI 21.0.4
   - Bootstrap
+  - Tailwind
 
 ### Procedura di modifica
 1) Analizza il progetto e identifica la modifica da eseguire.  
