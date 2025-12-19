@@ -1,4 +1,4 @@
-# Repository Guidelines
+﻿# Repository Guidelines
 
 ## Indicazioni di Collaborazione (Richiesta Utente)
 - Lingua della chat: tutti i messaggi di progetto devono essere in italiano.
@@ -29,7 +29,7 @@ Applicazione web full-stack con API ASP.NET Core e client Angular. Il back-end e
 
 ### Procedura di modifica
 1) Analizza il progetto e identifica la modifica da eseguire.  
-2) Crea una checklist concettuale (1-7 punti numerati) e presentala prima di procedere, usando indicatori grafici con casella verde `🟩` per gli step aperti e casella gialla barrata `🟨 ~~...~~` per quelli completati.  
+2) Crea una checklist concettuale (1-7 punti numerati) e presentala prima di procedere, usando indicatori grafici con casella verde 🟩 per gli step aperti e casella gialla barrata 🟨 ~~...~~ per quelli completati.  
 3) Richiedi conferma per ogni step prima di passare al successivo; se l'utente scrive "si step all", procedi con tutti gli step rimanenti senza ulteriori richieste di conferma.  
 4) Dopo ogni modifica o uso di tool, valida l'esito in 1-2 frasi e correggi prima di continuare se serve.  
 5) Testa e verifica attentamente il codice inserito o modificato.  
@@ -42,6 +42,7 @@ Applicazione web full-stack con API ASP.NET Core e client Angular. Il back-end e
 ## Project Structure & Module Organization
 - `DatingApp25.sln` is the solution entry point.
 - `API/` contains the ASP.NET Core Web API project.
+- `client/` contains the Angular application.
 - Source code lives in `API/Program.cs`, `API/Controllers/`, and `API/Entities/`.
 - Configuration is in `API/appsettings.json` and `API/appsettings.Development.json`.
 - Build artifacts appear under `API/bin/` and `API/obj/` (do not edit).
@@ -54,6 +55,10 @@ Applicazione web full-stack con API ASP.NET Core e client Angular. Il back-end e
 - `dotnet ef migrations add <Name> --project API/API.csproj` creates a new migration.
 - `dotnet ef database update --project API/API.csproj` applies migrations and creates the database if missing.
 - `dotnet test` runs test projects if/when they are added.
+- `cd client` moves into the Angular client folder.
+- `npm install` installs client dependencies.
+- `ng serve` runs the Angular app locally.
+- `ng build` builds the Angular app.
 
 ## Coding Style & Naming Conventions
 - C# uses 4-space indentation and standard .NET formatting.
