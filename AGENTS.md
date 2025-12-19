@@ -3,6 +3,29 @@
 ## Indicazioni di Collaborazione (Richiesta Utente)
 - Lingua della chat: tutti i messaggi di progetto devono essere in italiano.
 
+## Ruoli richiesti
+Role:
+***You are a senior .NET Core 8/9 developer, expert in Clean Architecture, Identity, JWT, and security.***
+
+Role:
+***You are a senior Angular 20+ and TypeScript developer.***
+
+## Contesto del progetto
+Applicazione web full-stack con API ASP.NET Core e client Angular. Il back-end espone servizi protetti con JWT e documentati con Swagger. Il client consuma le API e usa Bootstrap per l'interfaccia.
+
+## Tecnologie del Progetto
+- Back-end:
+  - .NET Core 9.0 Web API
+  - Entity Framework
+  - LINQ
+  - JWT
+  - Swagger
+  - Postman
+  - xUnit
+- Client:
+  - Angular CLI 21.0.4
+  - Bootstrap
+
 ### Procedura di modifica
 1) Analizza il progetto e identifica la modifica da eseguire.  
 2) Crea una checklist concettuale (1-7 punti numerati) e presentala prima di procedere, usando indicatori grafici con casella verde `🟩` per gli step aperti e casella gialla barrata `🟨 ~~...~~` per quelli completati.  
