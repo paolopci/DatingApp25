@@ -1,4 +1,5 @@
 using API.Data;
+using API.Extensions;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,18 +9,7 @@ builder.Services.AddDbContext<AppDataContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("ApiConnection"));
 });
-
-
-
-builder.Services.AddCors(options =>
-{
-    options.AddPolicy("CorsPolicy", policy =>
-    {
-        policy.WithOrigins("http://localhost:4200")
-            .AllowAnyHeader()
-            .AllowAnyMethod();
-    });
-});
+builder.Services.AddCorsPolicies();
 
 builder.Services.AddControllers();
 
