@@ -46,6 +46,7 @@ Applicazione web full-stack con API ASP.NET Core e client Angular. Il back-end e
 - `API/` contiene il progetto ASP.NET Core Web API.
 - `client/` contiene l'applicazione Angular.
 - `client/best-practices.md` contiene le buone pratiche Angular e TypeScript.
+- Le risorse statiche del client (immagini, ecc.) vanno in `client/public/` e sono servite alla root (es. `/user.png`).
 - Il codice sorgente vive in `API/Program.cs`, `API/Controllers/` e `API/Entities/`.
 - La configurazione e in `API/appsettings.json` e `API/appsettings.Development.json`.
 - Gli artefatti di build appaiono in `API/bin/` e `API/obj/` (non modificare).
