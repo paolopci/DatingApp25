@@ -59,7 +59,10 @@
               "buildTarget": "client:build:production"
             },
             "development": {
-              "buildTarget": "client:build:development"
+              "buildTarget": "client:build:development",
+              "ssl": true,
+              "sslKey": "ssl/localhost-key.pem",
+              "sslCert": "ssl/localhost.pem"
             }
           },
           "defaultConfiguration": "development"
