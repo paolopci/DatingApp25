@@ -42,6 +42,7 @@ Applicazione web full-stack con API ASP.NET Core e client Angular. Il back-end e
 
 ## Struttura del Progetto e Organizzazione Moduli
 - `DatingApp25.sln` e il punto di ingresso della soluzione.
+- La solution include un Solution Folder `client` con i file principali del client come Solution Items.
 - `API/` contiene il progetto ASP.NET Core Web API.
 - `client/` contiene l'applicazione Angular.
 - `client/best-practices.md` contiene le buone pratiche Angular e TypeScript.

@@ -5,6 +5,21 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "API\API.csproj", "{404435D5-3D83-4C84-800E-7FFE85A6F7BD}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "client", "client", "{B1A3E24B-9C0F-4CE7-9AA9-9C50F7423B6D}"
+	ProjectSection(SolutionItems) = preProject
+		client\.editorconfig = client\.editorconfig
+		client\.gitignore = client\.gitignore
+		client\.postcssrc.json = client\.postcssrc.json
+		client\angular.json = client\angular.json
+		client\best-practices.md = client\best-practices.md
+		client\package-lock.json = client\package-lock.json
+		client\package.json = client\package.json
+		client\README.md = client\README.md
+		client\tsconfig.app.json = client\tsconfig.app.json
+		client\tsconfig.json = client\tsconfig.json
+		client\tsconfig.spec.json = client\tsconfig.spec.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
