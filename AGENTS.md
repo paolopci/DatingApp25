@@ -88,3 +88,6 @@ Applicazione web full-stack con API ASP.NET Core e client Angular. Il back-end e
 - Salva le impostazioni specifiche per ambiente in `API/appsettings.Development.json`.
 - Non committare segreti; preferisci user secrets o variabili d'ambiente.
 - Salva la connection string nei user secrets sotto `ConnectionStrings:ApiConnection`.
+- Salva `JwtSettings` nei user secrets del progetto `API/API.csproj` e non in `appsettings*.json`.
+- Esempio:
+  `dotnet user-secrets set "JwtSettings:Key" "<jwt-key>" --project API/API.csproj`
