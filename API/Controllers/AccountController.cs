@@ -4,6 +4,7 @@ using API.Data;
 using API.DTOs;
 using API.Entities;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace API.Controllers;
 
@@ -12,6 +13,10 @@ public class AccountController(AppDataContext context) : BaseApiController
     [HttpPost("register")]
     public async Task<ActionResult<AppUser>> Register([FromBody] RegisterDto registerDto)
     {
+        if (await EmailExists(registerDto.Email))
+        {
+            return BadRequest("Email is already taken");
+        }
         using var hmac = new HMACSHA512();
         var user = new AppUser
         {
@@ -22,8 +27,11 @@ public class AccountController(AppDataContext context) : BaseApiController
         };
         context.Users.Add(user);
         await context.SaveChangesAsync();
-
-
         return user;
+    }
+
+    private async Task<bool> EmailExists(string email)
+    {
+        return await context.Users.AnyAsync(u => u.Email.ToLower() == email.ToLower());
     }
 }
