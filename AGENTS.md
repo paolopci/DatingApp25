@@ -1,4 +1,4 @@
-﻿# Linee Guida del Repository
+# Linee Guida del Repository
 
 ## Indicazioni di Collaborazione (Richiesta Utente)
 - Lingua della chat: tutti i messaggi di progetto devono essere in italiano.
@@ -30,7 +30,7 @@ Applicazione web full-stack con API ASP.NET Core e client Angular. Il back-end e
 
 ### Procedura di modifica
 1) Analizza il progetto e identifica la modifica da eseguire.  
-2) Crea una checklist concettuale (1-7 punti numerati) e presentala prima di procedere, usando indicatori grafici con casella verde 🟩 per gli step aperti e casella gialla barrata 🟨 ~~...~~ per quelli completati.  
+2) Crea una checklist concettuale (1-7 punti numerati) e presentala prima di procedere, usando indicatori grafici con casella verde ?? per gli step aperti e casella gialla barrata ?? ~~...~~ per quelli completati.  
 3) Richiedi conferma per ogni step prima di passare al successivo; se l'utente scrive "si step all", procedi con tutti gli step rimanenti senza ulteriori richieste di conferma.  
 4) Dopo ogni modifica o uso di tool, valida l'esito in 1-2 frasi e correggi prima di continuare se serve.  
 5) Testa e verifica attentamente il codice inserito o modificato.  
@@ -91,3 +91,5 @@ Applicazione web full-stack con API ASP.NET Core e client Angular. Il back-end e
 - Salva `JwtSettings` nei user secrets del progetto `API/API.csproj` e non in `appsettings*.json`.
 - Esempio:
   `dotnet user-secrets set "JwtSettings:Key" "<jwt-key>" --project API/API.csproj`
+- La registrazione JWT e' incapsulata in `API/Extensions/JwtServiceExtensions.cs`.
+
