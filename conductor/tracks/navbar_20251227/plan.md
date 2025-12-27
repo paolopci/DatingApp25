@@ -1,14 +1,14 @@
 # Track Plan: Responsive Navbar & Theme Switcher
 
 ## Phase 1: UI Structure & Static Layout
-- [ ] Task: Creazione Componente Navbar
-    - [ ] Sub-task: Genera componente `nav` con Angular CLI.
-    - [ ] Sub-task: Implementa struttura base HTML con DaisyUI Navbar.
-    - [ ] Sub-task: Integra l'icona SVG `users` (Heroicons) nel layout delle sezioni principali.
-    - [ ] Sub-task: Aggiungi Logo e posizionamento container.
-- [ ] Task: Theme Switcher
-    - [ ] Sub-task: Implementa logica per il cambio tema (set attribute data-theme).
-    - [ ] Sub-task: Aggiungi icone Sole/Luna e gestione click.
+- [x] Task: Creazione Componente Navbar (23a3876)
+    - [x] Sub-task: Genera componente `nav` con Angular CLI.
+    - [x] Sub-task: Implementa struttura base HTML con DaisyUI Navbar.
+    - [x] Sub-task: Integra l'icona SVG `users` (Heroicons) nel layout delle sezioni principali.
+    - [x] Sub-task: Aggiungi Logo e posizionamento container.
+- [x] Task: Theme Switcher (23a3876)
+    - [x] Sub-task: Implementa logica per il cambio tema (set attribute data-theme).
+    - [x] Sub-task: Aggiungi icone Sole/Luna e gestione click.
 - [ ] Task: Conductor - User Manual Verification 'UI Structure & Static Layout' (Protocol in workflow.md)
 
 ## Phase 2: Login Form (Guest View)
