@@ -4,10 +4,8 @@
 - [ ] Task: Creazione Componente Navbar
     - [ ] Sub-task: Genera componente `nav` con Angular CLI.
     - [ ] Sub-task: Implementa struttura base HTML con DaisyUI Navbar.
+    - [ ] Sub-task: Integra l'icona SVG `users` fornita nel layout.
     - [ ] Sub-task: Aggiungi Logo e posizionamento container.
-- [ ] Task: Asset Setup (Manuale Utente)
-    - [ ] Sub-task: Scaricare l'icona 'users' (Outline o Solid) da heroicons.com in formato PNG.
-    - [ ] Sub-task: Salvare l'icona come `users.png` nella cartella `client/public/` del progetto.
 - [ ] Task: Theme Switcher
     - [ ] Sub-task: Implementa logica per il cambio tema (set attribute data-theme).
     - [ ] Sub-task: Aggiungi icone Sole/Luna e gestione click.

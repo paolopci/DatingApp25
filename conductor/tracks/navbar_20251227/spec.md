@@ -21,7 +21,7 @@ Creare una barra di navigazione in stile "Course Standard" (DatingApp) ma modern
 - **Angular:** Utilizzo di `*ngIf` (o `@if`) per mostrare/nascondere elementi in base allo stato `accountService.currentUser$`.
 - **Forms:** Template-driven form per il login rapido nella navbar.
 - **Styling:** DaisyUI Navbar component.
-- **Assets:** Utilizzare icona `users.png` (da posizionare in `client/public/`) per la voce di menu omonima o come indicato nel mockup.
+- **Assets:** Utilizzare l'icona `users` in formato SVG (codice fornito dall'utente) per la navigazione. L'uso di SVG permetterà una gestione dinamica dei colori tramite Tailwind CSS.
 
 ## Strategia di Test
 - **Unit Test:** Verificare che il form di login appaia solo quando l'utente è sloggato.
