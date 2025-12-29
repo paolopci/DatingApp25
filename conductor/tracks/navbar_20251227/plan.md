@@ -1,6 +1,6 @@
 # Track Plan: Responsive Navbar & Theme Switcher
 
-## Phase 1: UI Structure & Static Layout
+## Phase 1: UI Structure & Static Layout [checkpoint: 187de58]
 - [x] Task: Creazione Componente Navbar (23a3876)
     - [x] Sub-task: Genera componente `nav` con Angular CLI.
     - [x] Sub-task: Implementa struttura base HTML con DaisyUI Navbar.
@@ -9,10 +9,10 @@
 - [x] Task: Theme Switcher (23a3876)
     - [x] Sub-task: Implementa logica per il cambio tema (set attribute data-theme).
     - [x] Sub-task: Aggiungi icone Sole/Luna e gestione click.
-- [ ] Task: Conductor - User Manual Verification 'UI Structure & Static Layout' (Protocol in workflow.md)
+- [x] Task: Conductor - User Manual Verification 'UI Structure & Static Layout' (Protocol in workflow.md) (187de58)
 
 ## Phase 2: Login Form (Guest View)
-- [ ] Task: Form Login Inline
+- [~] Task: Form Login Inline
     - [ ] Sub-task: Aggiungi input username/password e bottone login nella parte destra.
     - [ ] Sub-task: Stile degli input per adattarsi alla navbar scura/chiara.
 - [ ] Task: Integrazione Mock Auth

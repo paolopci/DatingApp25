@@ -62,15 +62,22 @@
             <li><a (click)="closeMobileMenu()">Messages</a></li>
           </ul>
           <div class="divider my-2"></div>
-          <form class="flex flex-col items-center gap-2" (submit)="closeMobileMenu()">
+          <form
+            #loginFormMobile="ngForm"
+            class="flex flex-col items-center gap-2"
+            (ngSubmit)="login(); closeMobileMenu()"
+            autocomplete="off"
+          >
             <input
               name="username"
+              [(ngModel)]="model.username"
               type="text"
               placeholder="Username"
               class="input input-bordered input-sm w-64 max-w-full"
             />
             <input
               name="password"
+              [(ngModel)]="model.password"
               type="password"
               placeholder="Password"
               class="input input-bordered input-sm w-64 max-w-full"
@@ -95,15 +102,22 @@
 
     <div class="flex-none flex items-center gap-4">
       <!-- Login Form -->
-      <form class="hidden gap-2 md:flex">
+      <form
+        #loginForm="ngForm"
+        class="hidden gap-2 md:flex"
+        (ngSubmit)="login()"
+        autocomplete="off"
+      >
         <input
           name="username"
+          [(ngModel)]="model.username"
           type="text"
           placeholder="Username"
           class="input input-bordered input-sm w-24 md:w-auto"
         />
         <input
           name="password"
+          [(ngModel)]="model.password"
           type="password"
           placeholder="Password"
           class="input input-bordered input-sm w-24 md:w-auto"

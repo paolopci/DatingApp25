@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-nav',
-  imports: [],
+  imports: [FormsModule],
   templateUrl: './nav.html',
   styleUrl: './nav.css',
 })
 export class Nav {
+  model: any = {};
   isMobileMenuOpen = false;
   isDarkTheme = false;
 
@@ -18,6 +20,10 @@ export class Nav {
       'light';
     this.isDarkTheme = initialTheme === 'dark';
     document.documentElement.setAttribute('data-theme', initialTheme);
+  }
+
+  login() {
+    console.log(this.model);
   }
 
   toggleMobileMenu() {
