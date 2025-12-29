@@ -24,7 +24,8 @@ public class AccountController(AppDataContext context, ITokenService tokenServic
             DisplayName = registerDto.DisplayName,
             PasswordHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(registerDto.Password)),
             PasswordSalt = hmac.Key,
-            Email = registerDto.Email
+            Email = registerDto.Email,
+            ImageUrl = registerDto.ImageUrl
         };
         context.Users.Add(user);
         await context.SaveChangesAsync();

@@ -43,6 +43,33 @@
     />
   </div>
 
+  <div class="form-control">
+    <label class="label">
+      <span class="label-text">Conferma Password</span>
+    </label>
+    <input
+      type="password"
+      name="confirmPassword"
+      [(ngModel)]="model.confirmPassword"
+      placeholder="Conferma la tua password"
+      class="input input-bordered w-full"
+      required
+    />
+  </div>
+
+  <div class="form-control">
+    <label class="label">
+      <span class="label-text">URL Immagine (opzionale)</span>
+    </label>
+    <input
+      type="text"
+      name="imageUrl"
+      [(ngModel)]="model.imageUrl"
+      placeholder="Inserisci l'URL della tua foto"
+      class="input input-bordered w-full"
+    />
+  </div>
+
   <div class="flex items-center justify-center gap-3 mt-6">
     <button type="submit" class="btn btn-primary px-8">Registrati</button>
     <button type="button" (click)="cancel()" class="btn btn-ghost">Annulla</button>
