@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, inject, OnInit, signal } from '@angular/core';
 import { lastValueFrom } from 'rxjs';
+import { AccountService } from './core/account.service';
 import { Nav } from "./nav/nav";
 
 @Component({
@@ -11,10 +12,14 @@ import { Nav } from "./nav/nav";
 })
 export class App implements OnInit {
   private http = inject(HttpClient);
+  private accountService = inject(AccountService);
   protected members = signal<any[]>([]);
 
   protected readonly title = signal('DatingApp25 Client');
   async ngOnInit() {
+    if (!this.accountService.currentUser()) {
+      return;
+    }
     this.getMembers().then((members) => this.members.set(members));
   }
 
