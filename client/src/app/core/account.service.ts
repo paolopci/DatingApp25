@@ -6,10 +6,11 @@ export interface User {
   displayName: string;
   email: string;
   token: string;
-}
+  imageUrl?: string;
+} 
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class AccountService {
   private http = inject(HttpClient);
@@ -31,7 +32,19 @@ export class AccountService {
 
   login(model: any) {
     return this.http.post<User>(this.baseUrl + 'account/login', model).pipe(
-      map(user => {
+      map((user) => {
+        if (user) {
+          localStorage.setItem('user', JSON.stringify(user));
+          this.currentUser.set(user);
+        }
+        return user;
+      })
+    );
+  }
+
+  register(model: any) {
+    return this.http.post<User>(this.baseUrl + 'account/register', model).pipe(
+      map((user) => {
         if (user) {
           localStorage.setItem('user', JSON.stringify(user));
           this.currentUser.set(user);

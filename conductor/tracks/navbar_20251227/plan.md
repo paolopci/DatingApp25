@@ -12,19 +12,19 @@
 - [x] Task: Conductor - User Manual Verification 'UI Structure & Static Layout' (Protocol in workflow.md) (187de58)
 
 ## Phase 2: Login Form (Guest View)
-- [~] Task: Form Login Inline
-    - [ ] Sub-task: Aggiungi input username/password e bottone login nella parte destra.
-    - [ ] Sub-task: Stile degli input per adattarsi alla navbar scura/chiara.
-- [ ] Task: Integrazione Mock Auth
-    - [ ] Sub-task: Simula un login (console.log) al submit del form.
-    - [ ] Sub-task: Prepara il binding per `accountService.login()` (da implementare nel track Auth, qui usiamo un placeholder o mock).
-- [ ] Task: Conductor - User Manual Verification 'Login Form (Guest View)' (Protocol in workflow.md)
+- [x] Task: Form Login Inline
+    - [x] Sub-task: Aggiungi input username/password e bottone login nella parte destra.
+    - [x] Sub-task: Stile degli input per adattarsi alla navbar scura/chiara.
+- [x] Task: Integrazione Mock Auth
+    - [x] Sub-task: Simula un login (console.log) al submit del form.
+    - [x] Sub-task: Prepara il binding per `accountService.login()`.
+- [x] Task: Conductor - User Manual Verification 'Login Form (Guest View)' (Protocol in workflow.md)
 
 ## Phase 3: Authenticated View & Responsive
-- [ ] Task: Navigazione Utente Loggato
-    - [ ] Sub-task: Aggiungi link (Matches, Lists, Messages) visibili solo se `loggedIn = true` (usa variabile temporanea o Mock Service).
-    - [ ] Sub-task: Aggiungi Dropdown User Menu (Edit Profile, Logout).
-- [ ] Task: Responsive Design
-    - [ ] Sub-task: Gestione menu mobile (hamburger) per schermi piccoli.
-    - [ ] Sub-task: Verifica adattamento form di login su mobile (o nascondilo in favore di un link "Login").
-- [ ] Task: Conductor - User Manual Verification 'Authenticated View & Responsive' (Protocol in workflow.md)
+- [x] Task: Navigazione Utente Loggato
+    - [x] Sub-task: Aggiungi link (Matches, Lists, Messages) visibili solo se `loggedIn = true`.
+    - [x] Sub-task: Aggiungi Dropdown User Menu (Edit Profile, Logout).
+- [x] Task: Responsive Design
+    - [x] Sub-task: Gestione menu mobile (hamburger) per schermi piccoli.
+    - [x] Sub-task: Verifica adattamento form di login su mobile.
+- [x] Task: Conductor - User Manual Verification 'Authenticated View & Responsive' (Protocol in workflow.md)
