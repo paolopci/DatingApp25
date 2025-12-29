@@ -1,0 +1,28 @@
+.user-avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 9999px;
+  background-color: #ffffff;
+  border: 1px solid transparent;
+}
+
+.user-avatar__img {
+  width: 18px;
+  height: 18px;
+}
+
+:root[data-theme='dark'] .user-avatar {
+  background-color: #000000;
+  border-color: #ffffff;
+}
+
+:root[data-theme='dark'] .user-avatar__img {
+  filter: invert(1);
+}
+
+.user-name {
+  font-weight: 600;
+}

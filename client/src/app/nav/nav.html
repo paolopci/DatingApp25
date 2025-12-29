@@ -58,11 +58,12 @@
         >
           @if (accountService.currentUser()) {
           <div class="px-4 py-2">
-            <img
-              src="/user.png"
-              alt="Utente"
-              class="h-8 w-8"
-            />
+            <span class="user-avatar">
+              <img src="/user.png" alt="Utente" class="user-avatar__img" />
+            </span>
+            <span class="user-name">
+              {{ accountService.currentUser()?.displayName | titlecase }}
+            </span>
           </div>
           <ul class="menu menu-sm items-center text-center">
             <li><a (click)="closeMobileMenu()">Matches</a></li>
@@ -117,11 +118,12 @@
       @if (accountService.currentUser()) {
       <div class="dropdown dropdown-end hidden md:block">
         <div tabindex="0" role="button" class="btn btn-ghost">
-          <img
-            src="/user.png"
-            alt="Utente"
-            class="h-8 w-8"
-          />
+          <span class="user-avatar">
+            <img src="/user.png" alt="Utente" class="user-avatar__img" />
+          </span>
+          <span class="user-name">
+            {{ accountService.currentUser()?.displayName | titlecase }}
+          </span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 20 20"
