@@ -3,7 +3,8 @@ import { inject, Injectable, signal } from '@angular/core';
 import { map } from 'rxjs';
 
 export interface User {
-  username: string;
+  displayName: string;
+  email: string;
   token: string;
 }
 
@@ -18,7 +19,13 @@ export class AccountService {
   constructor() {
     const userString = localStorage.getItem('user');
     if (userString) {
-      this.currentUser.set(JSON.parse(userString));
+      try {
+        const user: User = JSON.parse(userString);
+        this.currentUser.set(user);
+      } catch (error) {
+        console.error('Error parsing user from localStorage', error);
+        localStorage.removeItem('user');
+      }
     }
   }
 
