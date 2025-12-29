@@ -1,5 +1,11 @@
 import { HttpClient } from '@angular/common/http';
-import { inject, Injectable } from '@angular/core';
+import { inject, Injectable, signal } from '@angular/core';
+import { map } from 'rxjs';
+
+export interface User {
+  username: string;
+  token: string;
+}
 
 @Injectable({
   providedIn: 'root'
@@ -7,12 +13,29 @@ import { inject, Injectable } from '@angular/core';
 export class AccountService {
   private http = inject(HttpClient);
   baseUrl = 'https://localhost:5001/api/';
+  currentUser = signal<User | null>(null);
+
+  constructor() {
+    const userString = localStorage.getItem('user');
+    if (userString) {
+      this.currentUser.set(JSON.parse(userString));
+    }
+  }
 
   login(model: any) {
-    return this.http.post(this.baseUrl + 'account/login', model);
+    return this.http.post<User>(this.baseUrl + 'account/login', model).pipe(
+      map(user => {
+        if (user) {
+          localStorage.setItem('user', JSON.stringify(user));
+          this.currentUser.set(user);
+        }
+        return user;
+      })
+    );
   }
 
   logout() {
-    // Logica di logout da implementare
+    localStorage.removeItem('user');
+    this.currentUser.set(null);
   }
 }
