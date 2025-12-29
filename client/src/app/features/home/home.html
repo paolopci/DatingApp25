@@ -1,0 +1,27 @@
+<div class="home-hero container mx-auto px-4 mt-20 text-center">
+  @if (!registerMode) {
+  <div class="max-w-2xl mx-auto">
+    <h1 class="text-5xl font-extrabold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+      Trova il tuo Match perfetto
+    </h1>
+    <p class="text-xl mb-10 text-base-content/70">
+      Unisciti alla nostra community per conoscere nuove persone. 
+      Tutto quello che devi fare è registrarti!
+    </p>
+    <div class="flex justify-center gap-2 sm:gap-4 px-3 sm:px-0">
+      <button (click)="registerToggle()" class="btn btn-primary btn-lg px-6 sm:px-12 shadow-xl hover:scale-105 transition-transform">
+        Registrati Ora
+      </button>
+      <button class="btn btn-outline btn-lg px-6 sm:px-12">
+        Scopri di più
+      </button>
+    </div>
+  </div>
+  } @else {
+  <div class="flex justify-center animate-in fade-in zoom-in duration-300">
+    <app-register (cancelRegister)="cancelRegisterMode($event)"></app-register>
+  </div>
+  }
+</div>
+
+

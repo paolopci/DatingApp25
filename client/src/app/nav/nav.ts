@@ -38,11 +38,16 @@ export class Nav {
   }
 
   toggleMobileMenu() {
-    this.isMobileMenuOpen = !this.isMobileMenuOpen;
+    this.setMobileMenuState(!this.isMobileMenuOpen);
   }
 
   closeMobileMenu() {
-    this.isMobileMenuOpen = false;
+    this.setMobileMenuState(false);
+  }
+
+  private setMobileMenuState(isOpen: boolean) {
+    this.isMobileMenuOpen = isOpen;
+    document.body.classList.toggle('mobile-menu-open', isOpen);
   }
 
   toggleTheme() {
@@ -52,3 +57,4 @@ export class Nav {
     localStorage.setItem('theme', theme);
   }
 }
+

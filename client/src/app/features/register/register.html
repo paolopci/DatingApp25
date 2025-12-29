@@ -1,0 +1,50 @@
+<form #registerForm="ngForm" (ngSubmit)="register()" autocomplete="off" class="flex flex-col gap-4 w-full max-w-md mx-auto p-6 bg-base-200 rounded-xl shadow-lg">
+  <h2 class="text-2xl font-bold text-center text-primary mb-4">Registrati</h2>
+  
+  <div class="form-control">
+    <label class="label">
+      <span class="label-text">Email</span>
+    </label>
+    <input
+      type="email"
+      name="email"
+      [(ngModel)]="model.email"
+      placeholder="Inserisci la tua email"
+      class="input input-bordered w-full"
+      required
+    />
+  </div>
+
+  <div class="form-control">
+    <label class="label">
+      <span class="label-text">Nome Visualizzato</span>
+    </label>
+    <input
+      type="text"
+      name="displayName"
+      [(ngModel)]="model.displayName"
+      placeholder="Come vuoi apparire agli altri?"
+      class="input input-bordered w-full"
+      required
+    />
+  </div>
+
+  <div class="form-control">
+    <label class="label">
+      <span class="label-text">Password</span>
+    </label>
+    <input
+      type="password"
+      name="password"
+      [(ngModel)]="model.password"
+      placeholder="Inserisci una password (min 4 caratteri)"
+      class="input input-bordered w-full"
+      required
+    />
+  </div>
+
+  <div class="flex items-center justify-center gap-3 mt-6">
+    <button type="submit" class="btn btn-primary px-8">Registrati</button>
+    <button type="button" (click)="cancel()" class="btn btn-ghost">Annulla</button>
+  </div>
+</form>
