@@ -16,8 +16,8 @@
 - [ ] Task: Conductor - User Manual Verification 'Component Development' (Protocol in workflow.md)
 
 ## Phase 3: Integration & Testing
-- [ ] Task: Integrazione Globale in AppComponent
-    - [ ] Sub-task: Aggiungi `ToastComponent` al template di `AppComponent`.
-- [ ] Task: Test di Verifica
-    - [ ] Sub-task: Test manuale lanciando toast da un componente esistente (es. Home).
+- [x] Task: Integrazione Globale in AppComponent (9829d6a)
+    - [x] Sub-task: Aggiungi `ToastComponent` al template di `AppComponent`.
+- [x] Task: Test di Verifica (9829d6a)
+    - [x] Sub-task: Test manuale lanciando toast da un componente esistente (es. Home).
 - [ ] Task: Conductor - User Manual Verification 'Integration & Testing' (Protocol in workflow.md)
