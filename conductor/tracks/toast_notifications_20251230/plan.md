@@ -8,7 +8,7 @@
     - [x] Sub-task: Implementa logica di auto-rimozione con `setTimeout`.
 - [ ] Task: Conductor - User Manual Verification 'Service Development' (Protocol in workflow.md)
 
-## Phase 2: Component Development
+## Phase 2: Component Development [checkpoint: a52e97a]
 - [x] Task: Generazione ToastComponent (12d6b65)
     - [x] Sub-task: Genera componente `core/components/toast`.
     - [x] Sub-task: Implementa template HTML con struttura DaisyUI.
