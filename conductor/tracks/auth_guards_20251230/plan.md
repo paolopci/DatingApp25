@@ -8,9 +8,9 @@
 - [ ] Task: Conductor - User Manual Verification 'Auth Guard Development' (Protocol in workflow.md)
 
 ## Phase 2: Router Integration
-- [ ] Task: Protezione delle Rotte
-    - [ ] Sub-task: Applica `authGuard` alle rotte `matches`, `lists` e `messages` in `app.routes.ts`.
-    - [ ] Sub-task: Verifica integrità delle rotte esistenti.
+- [x] Task: Protezione delle Rotte (b4a4e1a)
+    - [x] Sub-task: Applica `authGuard` alle rotte `matches`, `lists` e `messages` in `app.routes.ts`.
+    - [x] Sub-task: Verifica integrità delle rotte esistenti.
 - [ ] Task: Conductor - User Manual Verification 'Router Integration' (Protocol in workflow.md)
 
 ## Phase 3: Login UX Improvements
