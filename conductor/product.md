@@ -19,6 +19,7 @@ L'applicazione si rivolge alla popolazione generale interessata a conoscere nuov
 - **Messaggistica:** Sistema di chat in tempo reale per comunicare con i propri "match".
 - **Autenticazione Sicura:** Gestione degli accessi tramite JSON Web Tokens (JWT) per garantire la protezione dei dati utente.
 - **Navigazione Fluida (SPA):** Interfaccia moderna senza ricaricamento delle pagine tra le sezioni principali.
+- **Notifiche in Tempo Reale:** Sistema di avvisi "Toast" per feedback immediato su azioni dell'utente (es. login, errori, messaggi ricevuti).
 
 ## Roadmap Iniziale
 L'attenzione iniziale sarà focalizzata sulla solidità del sistema di autenticazione e sulla fluidità dell'esperienza di ricerca e messaggistica. Il design visivo verrà definito in una fase successiva del progetto.

@@ -12,8 +12,5 @@ This file tracks all major tracks for the project. Each track has its own detail
 
 ---
 
----
 
-## [~] Track: implementiamo il component daisyUI\Toasts per farlo implementiamo un servizio nella cartella core/services/ e lo chiamiamo toast-service
-*Link: [./conductor/tracks/toast_notifications_20251230/](./conductor/tracks/toast_notifications_20251230/)*
 
