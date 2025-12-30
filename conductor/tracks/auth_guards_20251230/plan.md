@@ -13,7 +13,7 @@
     - [x] Sub-task: Verifica integrità delle rotte esistenti.
 - [ ] Task: Conductor - User Manual Verification 'Router Integration' (Protocol in workflow.md)
 
-## Phase 3: Login UX Improvements
+## Phase 3: Login UX Improvements [checkpoint: bfcec2d]
 - [x] Task: Integrazione Toast nel Login (b3b1c2f)
     - [x] Sub-task: Inserisci chiamata a `toastService.success` nel metodo `login` di `Nav`.
     - [x] Sub-task: Aggiungi gestione errori con `toastService.error` nel login.
