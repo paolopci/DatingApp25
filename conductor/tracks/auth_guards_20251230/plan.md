@@ -1,6 +1,6 @@
 # Track Plan: Auth Guard & Login Feedback
 
-## Phase 1: Auth Guard Development (TDD)
+## Phase 1: Auth Guard Development (TDD) [checkpoint: c683b61]
 - [x] Task: Creazione Auth Guard (2fd4c77)
     - [x] Sub-task: Scrivi test d'unità (Red Phase) per `auth.guard.ts` (casi: autenticato, non autenticato).
     - [x] Sub-task: Implementa la guard funzionale in `core/guards/auth.guard.ts`.
