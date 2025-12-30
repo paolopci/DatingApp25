@@ -14,10 +14,10 @@
 - [ ] Task: Conductor - User Manual Verification 'Router Integration' (Protocol in workflow.md)
 
 ## Phase 3: Login UX Improvements
-- [ ] Task: Integrazione Toast nel Login
-    - [ ] Sub-task: Inserisci chiamata a `toastService.success` nel metodo `login` di `Nav`.
-    - [ ] Sub-task: Aggiungi gestione errori con `toastService.error` nel login.
-- [ ] Task: Test di Verifica Finale
-    - [ ] Sub-task: Test manuale: tentativo accesso rotta protetta da anonimo (atteso: redirect + toast errore).
-    - [ ] Sub-task: Test manuale: login (atteso: toast successo + accesso permesso).
+- [x] Task: Integrazione Toast nel Login (b3b1c2f)
+    - [x] Sub-task: Inserisci chiamata a `toastService.success` nel metodo `login` di `Nav`.
+    - [x] Sub-task: Aggiungi gestione errori con `toastService.error` nel login.
+- [x] Task: Test di Verifica Finale (b3b1c2f)
+    - [x] Sub-task: Test manuale: tentativo accesso rotta protetta da anonimo (atteso: redirect + toast errore).
+    - [x] Sub-task: Test manuale: login (atteso: toast successo + accesso permesso).
 - [ ] Task: Conductor - User Manual Verification 'Login UX Improvements' (Protocol in workflow.md)
