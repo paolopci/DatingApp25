@@ -2,7 +2,7 @@ import { Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { AccountService } from '../core/account.service';
 import { TitleCasePipe } from '@angular/common';
-import { RouterLink, RouterLinkActive } from '@angular/router';
+import { Router, RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-nav',
@@ -12,6 +12,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 })
 export class Nav {
   accountService = inject(AccountService);
+  private router = inject(Router);
   model: any = {};
   isMobileMenuOpen = false;
   isDarkTheme = false;
@@ -28,6 +29,7 @@ export class Nav {
     this.accountService.login(this.model).subscribe({
       next: response => {
         console.log(response);
+        this.router.navigateByUrl('/members');
       },
       error: error => console.log(error)
     });

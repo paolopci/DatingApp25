@@ -17,5 +17,5 @@ This file tracks all major tracks for the project. Each track has its own detail
 
 ---
 
-## [ ] Track: Integrazione Link Navbar e Router
+## [~] Track: Integrazione Link Navbar e Router
 *Link: [./conductor/tracks/navbar_links_20251230/](./conductor/tracks/navbar_links_20251230/)*

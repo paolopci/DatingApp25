@@ -21,8 +21,8 @@
 - [x] Task: Conductor - User Manual Verification 'Imports & Configuration' (Protocol in workflow.md) (3c879d0)
 
 ## Phase 3: Verification
-- [ ] Task: Verifica Navigazione Manuale
-    - [ ] Sub-task: Test click su ogni link.
-    - [ ] Sub-task: Verifica assenza refresh pagina.
-    - [ ] Sub-task: Verifica stile attivo.
-- [ ] Task: Conductor - User Manual Verification 'Verification' (Protocol in workflow.md)
+- [x] Task: Verifica Navigazione Manuale
+    - [x] Sub-task: Test click su ogni link.
+    - [x] Sub-task: Verifica assenza refresh pagina.
+    - [x] Sub-task: Verifica stile attivo.
+- [x] Task: Conductor - User Manual Verification 'Verification' (Protocol in workflow.md)
