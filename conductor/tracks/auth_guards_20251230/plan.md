@@ -7,7 +7,7 @@
     - [x] Sub-task: Verifica il passaggio dei test (Green Phase).
 - [ ] Task: Conductor - User Manual Verification 'Auth Guard Development' (Protocol in workflow.md)
 
-## Phase 2: Router Integration
+## Phase 2: Router Integration [checkpoint: 20c6eda]
 - [x] Task: Protezione delle Rotte (b4a4e1a)
     - [x] Sub-task: Applica `authGuard` alle rotte `matches`, `lists` e `messages` in `app.routes.ts`.
     - [x] Sub-task: Verifica integrità delle rotte esistenti.
