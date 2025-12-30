@@ -15,8 +15,10 @@ L'applicazione si rivolge alla popolazione generale interessata a conoscere nuov
 
 ## Funzionalità Chiave (MVP)
 - **Ricerca Intelligente:** Filtri avanzati per età, interessi e vicinanza geografica.
+- **Gestione Liste:** Possibilità di salvare profili preferiti o interessanti.
 - **Messaggistica:** Sistema di chat in tempo reale per comunicare con i propri "match".
 - **Autenticazione Sicura:** Gestione degli accessi tramite JSON Web Tokens (JWT) per garantire la protezione dei dati utente.
+- **Navigazione Fluida (SPA):** Interfaccia moderna senza ricaricamento delle pagine tra le sezioni principali.
 
 ## Roadmap Iniziale
 L'attenzione iniziale sarà focalizzata sulla solidità del sistema di autenticazione e sulla fluidità dell'esperienza di ricerca e messaggistica. Il design visivo verrà definito in una fase successiva del progetto.

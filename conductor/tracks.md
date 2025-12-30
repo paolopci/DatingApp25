@@ -12,10 +12,8 @@ This file tracks all major tracks for the project. Each track has its own detail
 
 ---
 
-## [x] Track: Routing nel progetto client e creazione componenti features
-*Link: [./conductor/tracks/routing_features_20251230/](./conductor/tracks/routing_features_20251230/)*
-
 ---
 
-## [~] Track: Integrazione Link Navbar e Router
-*Link: [./conductor/tracks/navbar_links_20251230/](./conductor/tracks/navbar_links_20251230/)*
+## [ ] Track: implementiamo il component daisyUI\Toasts per farlo implementiamo un servizio nella cartella core/services/ e lo chiamiamo toast-service
+*Link: [./conductor/tracks/toast_notifications_20251230/](./conductor/tracks/toast_notifications_20251230/)*
+
