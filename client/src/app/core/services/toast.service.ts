@@ -1,0 +1,44 @@
+import { Injectable, signal } from '@angular/core';
+
+export interface Toast {
+  id: number;
+  message: string;
+  type: 'success' | 'error' | 'info' | 'warning';
+}
+
+@Injectable({
+  providedIn: 'root'
+})
+export class ToastService {
+  toasts = signal<Toast[]>([]);
+
+  success(message: string) {
+    this.add(message, 'success');
+  }
+
+  error(message: string) {
+    this.add(message, 'error');
+  }
+
+  info(message: string) {
+    this.add(message, 'info');
+  }
+
+  warning(message: string) {
+    this.add(message, 'warning');
+  }
+
+  private add(message: string, type: Toast['type']) {
+    const id = Date.now();
+    const newToast: Toast = { id, message, type };
+    this.toasts.update((toasts) => [...toasts, newToast]);
+
+    setTimeout(() => {
+      this.remove(id);
+    }, 5000);
+  }
+
+  remove(id: number) {
+    this.toasts.update((toasts) => toasts.filter((t) => t.id !== id));
+  }
+}
