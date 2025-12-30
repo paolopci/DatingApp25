@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { Nav } from './nav';
 import { provideRouter, RouterLink, RouterLinkActive } from '@angular/router';
 import { By } from '@angular/platform-browser';
-import { AccountService } from '../core/account.service';
+import { AccountService } from '../core/services/account.service';
 import { of } from 'rxjs';
 import { signal } from '@angular/core';
 

@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { AccountService } from './core/account.service';
+import { AccountService } from './core/services/account.service';
 import { Nav } from './nav/nav';
 import { Home } from './features/home/home';
 import { ToastComponent } from './core/components/toast.component';
