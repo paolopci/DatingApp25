@@ -1,6 +1,6 @@
 # Track Plan: Toast Notifications Service & Component
 
-## Phase 1: Service Development
+## Phase 1: Service Development [checkpoint: 928c27c]
 - [x] Task: Creazione ToastService (1a9f473)
     - [x] Sub-task: Definisci interfaccia `Toast` (message, type, id).
     - [x] Sub-task: Implementa gestione stato con `signal`.
