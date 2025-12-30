@@ -9,10 +9,10 @@
 - [ ] Task: Conductor - User Manual Verification 'Service Development' (Protocol in workflow.md)
 
 ## Phase 2: Component Development
-- [ ] Task: Generazione ToastComponent
-    - [ ] Sub-task: Genera componente `core/components/toast`.
-    - [ ] Sub-task: Implementa template HTML con struttura DaisyUI.
-    - [ ] Sub-task: Implementa logica di visualizzazione (mapping tipi -> classi CSS).
+- [x] Task: Generazione ToastComponent (12d6b65)
+    - [x] Sub-task: Genera componente `core/components/toast`.
+    - [x] Sub-task: Implementa template HTML con struttura DaisyUI.
+    - [x] Sub-task: Implementa logica di visualizzazione (mapping tipi -> classi CSS).
 - [ ] Task: Conductor - User Manual Verification 'Component Development' (Protocol in workflow.md)
 
 ## Phase 3: Integration & Testing
