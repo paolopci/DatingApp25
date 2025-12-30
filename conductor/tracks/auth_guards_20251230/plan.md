@@ -1,10 +1,10 @@
 # Track Plan: Auth Guard & Login Feedback
 
 ## Phase 1: Auth Guard Development (TDD)
-- [ ] Task: Creazione Auth Guard
-    - [ ] Sub-task: Scrivi test d'unità (Red Phase) per `auth.guard.ts` (casi: autenticato, non autenticato).
-    - [ ] Sub-task: Implementa la guard funzionale in `core/guards/auth.guard.ts`.
-    - [ ] Sub-task: Verifica il passaggio dei test (Green Phase).
+- [x] Task: Creazione Auth Guard (2fd4c77)
+    - [x] Sub-task: Scrivi test d'unità (Red Phase) per `auth.guard.ts` (casi: autenticato, non autenticato).
+    - [x] Sub-task: Implementa la guard funzionale in `core/guards/auth.guard.ts`.
+    - [x] Sub-task: Verifica il passaggio dei test (Green Phase).
 - [ ] Task: Conductor - User Manual Verification 'Auth Guard Development' (Protocol in workflow.md)
 
 ## Phase 2: Router Integration
