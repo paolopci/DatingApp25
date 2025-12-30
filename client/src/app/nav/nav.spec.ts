@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { Nav } from './nav';
+import { provideRouter } from '@angular/router';
 
 describe('Nav', () => {
   let component: Nav;
@@ -8,7 +9,8 @@ describe('Nav', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Nav]
+      imports: [Nav],
+      providers: [provideRouter([])]
     })
     .compileComponents();
 
@@ -24,7 +26,7 @@ describe('Nav', () => {
   it('should have login form when not logged in', () => {
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelector('form')).toBeTruthy();
-    expect(compiled.querySelector('input[name="username"]')).toBeTruthy();
+    expect(compiled.querySelector('input[name="email"]')).toBeTruthy();
     expect(compiled.querySelector('input[name="password"]')).toBeTruthy();
     expect(compiled.querySelector('button[type="submit"]')).toBeTruthy();
   });
