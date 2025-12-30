@@ -1,0 +1,10 @@
+:host-context(.mobile-menu-open) .home-hero {
+  margin-top: 12rem;
+}
+
+@media (min-width: 768px) {
+  :host-context(.mobile-menu-open) .home-hero {
+    margin-top: 5rem;
+  }
+}
+
