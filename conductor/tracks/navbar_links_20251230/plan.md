@@ -1,24 +1,24 @@
 # Track Plan: Navbar Link Integration
 
 ## Phase 1: Update Navbar Template
-- [ ] Task: Aggiornamento Link Logo/Home
-    - [ ] Sub-task: Aggiungi `routerLink="/"`.
-    - [ ] Sub-task: Aggiungi `routerLinkActive`.
-- [ ] Task: Aggiornamento Link Matches
-    - [ ] Sub-task: Aggiungi `routerLink="/members"`.
-    - [ ] Sub-task: Aggiungi `routerLinkActive="active"`.
-- [ ] Task: Aggiornamento Link Lists
-    - [ ] Sub-task: Aggiungi `routerLink="/lists"`.
-    - [ ] Sub-task: Aggiungi `routerLinkActive="active"`.
-- [ ] Task: Aggiornamento Link Messages
-    - [ ] Sub-task: Aggiungi `routerLink="/messages"`.
-    - [ ] Sub-task: Aggiungi `routerLinkActive="active"`.
-- [ ] Task: Conductor - User Manual Verification 'Update Navbar Template' (Protocol in workflow.md)
+- [x] Task: Aggiornamento Link Logo/Home
+    - [x] Sub-task: Aggiungi `routerLink="/"`.
+    - [x] Sub-task: Aggiungi `routerLinkActive`.
+- [x] Task: Aggiornamento Link Matches
+    - [x] Sub-task: Aggiungi `routerLink="/members"`.
+    - [x] Sub-task: Aggiungi `routerLinkActive="active"`.
+- [x] Task: Aggiornamento Link Lists
+    - [x] Sub-task: Aggiungi `routerLink="/lists"`.
+    - [x] Sub-task: Aggiungi `routerLinkActive="active"`.
+- [x] Task: Aggiornamento Link Messages
+    - [x] Sub-task: Aggiungi `routerLink="/messages"`.
+    - [x] Sub-task: Aggiungi `routerLinkActive="active"`.
+- [x] Task: Conductor - User Manual Verification 'Update Navbar Template' (Protocol in workflow.md) (3c879d0)
 
 ## Phase 2: Imports & Configuration
-- [ ] Task: Aggiornamento `NavComponent`
-    - [ ] Sub-task: Importazione `RouterLink` e `RouterLinkActive` nel file TypeScript (`nav.component.ts`).
-- [ ] Task: Conductor - User Manual Verification 'Imports & Configuration' (Protocol in workflow.md)
+- [x] Task: Aggiornamento `NavComponent`
+    - [x] Sub-task: Importazione `RouterLink` e `RouterLinkActive` nel file TypeScript (`nav.component.ts`).
+- [x] Task: Conductor - User Manual Verification 'Imports & Configuration' (Protocol in workflow.md) (3c879d0)
 
 ## Phase 3: Verification
 - [ ] Task: Verifica Navigazione Manuale
