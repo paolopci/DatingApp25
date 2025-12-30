@@ -15,7 +15,7 @@
     - [x] Sub-task: Implementa logica di visualizzazione (mapping tipi -> classi CSS).
 - [ ] Task: Conductor - User Manual Verification 'Component Development' (Protocol in workflow.md)
 
-## Phase 3: Integration & Testing
+## Phase 3: Integration & Testing [checkpoint: b74f2b4]
 - [x] Task: Integrazione Globale in AppComponent (9829d6a)
     - [x] Sub-task: Aggiungi `ToastComponent` al template di `AppComponent`.
 - [x] Task: Test di Verifica (9829d6a)
