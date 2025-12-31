@@ -1,7 +1,7 @@
 <nav class="navbar bg-base-100 shadow-sm sticky top-0 z-50">
   <div class="container mx-auto flex items-center justify-between">
     <div class="flex-1 flex items-center gap-4">
-      <a class="btn btn-ghost text-xl flex items-center gap-2">
+      <a class="btn btn-ghost text-xl flex items-center gap-2" routerLink="/" routerLinkActive="active">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -66,9 +66,9 @@
             </span>
           </div>
           <ul class="menu menu-sm items-center text-center">
-            <li><a (click)="closeMobileMenu()">Matches</a></li>
-            <li><a (click)="closeMobileMenu()">Lists</a></li>
-            <li><a (click)="closeMobileMenu()">Messages</a></li>
+            <li><a routerLink="/members" routerLinkActive="active" (click)="closeMobileMenu()">Matches</a></li>
+            <li><a routerLink="/lists" routerLinkActive="active" (click)="closeMobileMenu()">Lists</a></li>
+            <li><a routerLink="/messages" routerLinkActive="active" (click)="closeMobileMenu()">Messages</a></li>
             <li><a (click)="logout(); closeMobileMenu()">Logout</a></li>
           </ul>
           } @else {
@@ -105,9 +105,9 @@
       <div class="hidden md:flex">
         @if (accountService.currentUser()) {
         <ul class="menu menu-horizontal px-1">
-          <li><a>Matches</a></li>
-          <li><a>Lists</a></li>
-          <li><a>Messages</a></li>
+          <li><a routerLink="/members" routerLinkActive="active">Matches</a></li>
+          <li><a routerLink="/lists" routerLinkActive="active">Lists</a></li>
+          <li><a routerLink="/messages" routerLinkActive="active">Messages</a></li>
         </ul>
         }
       </div>

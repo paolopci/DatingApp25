@@ -1,0 +1,8 @@
+{
+  "track_id": "toast_notifications_20251230",
+  "type": "feature",
+  "status": "new",
+  "created_at": "2025-12-30T12:15:00Z",
+  "updated_at": "2025-12-30T12:15:00Z",
+  "description": "implementiamo il component daisyUI\Toasts per farlo implementiamo un servizio nella cartella core/services/ e lo chiamiamo toast-service"
+}
