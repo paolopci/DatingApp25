@@ -15,7 +15,4 @@ This file tracks all major tracks for the project. Each track has its own detail
 
 
 
----
 
-## [~] Track: Guard, implementiamo le Guard per la precisione CanActivate quando l'utente è loggato correttamente allora può accedere ai menu della navbar Matches,Lists e Messages
-*Link: [./conductor/tracks/auth_guards_20251230/](./conductor/tracks/auth_guards_20251230/)*

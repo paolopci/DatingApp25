@@ -17,7 +17,7 @@ L'applicazione si rivolge alla popolazione generale interessata a conoscere nuov
 - **Ricerca Intelligente:** Filtri avanzati per età, interessi e vicinanza geografica.
 - **Gestione Liste:** Possibilità di salvare profili preferiti o interessanti.
 - **Messaggistica:** Sistema di chat in tempo reale per comunicare con i propri "match".
-- **Autenticazione Sicura:** Gestione degli accessi tramite JSON Web Tokens (JWT) per garantire la protezione dei dati utente.
+- **Autenticazione Sicura:** Gestione degli accessi tramite JSON Web Tokens (JWT) e protezione delle rotte (Auth Guards) per garantire che solo gli utenti autorizzati accedano a contenuti sensibili.
 - **Navigazione Fluida (SPA):** Interfaccia moderna senza ricaricamento delle pagine tra le sezioni principali.
 - **Notifiche in Tempo Reale:** Sistema di avvisi "Toast" per feedback immediato su azioni dell'utente (es. login, errori, messaggi ricevuti).
 
