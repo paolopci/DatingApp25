@@ -1,0 +1,77 @@
+<section class="mx-auto max-w-5xl px-4 py-8">
+  <header class="mb-8">
+    <p class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">Diagnostic</p>
+    <h1 class="mt-2 text-3xl font-bold text-slate-900 sm:text-4xl">Test errori API</h1>
+    <p class="mt-2 max-w-2xl text-sm text-slate-600">
+      Usa questi pulsanti per generare risposte 4xx/5xx e verificare il comportamento del client e
+      del middleware.
+    </p>
+  </header>
+
+  <div class="grid gap-6 lg:grid-cols-2">
+    <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+      <div class="flex items-start justify-between">
+        <div>
+          <h2 class="text-lg font-semibold text-slate-900">Errori client</h2>
+          <p class="mt-1 text-sm text-slate-600">Simula richieste non valide o non autorizzate.</p>
+        </div>
+        <span class="rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold text-amber-700"
+          >4xx</span
+        >
+      </div>
+
+      <div class="mt-6 grid gap-3 sm:grid-cols-2">
+        <button
+          type="button"
+          class="w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-700 shadow-sm transition hover:border-slate-300 hover:bg-slate-50"
+          (click)="get400Error()"
+        >
+          400 Bad Request
+        </button>
+        <button
+          type="button"
+          class="w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-700 shadow-sm transition hover:border-slate-300 hover:bg-slate-50"
+          (click)="get401Error()"
+        >
+          401 Unauthorized
+        </button>
+        <button
+          type="button"
+          class="w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-700 shadow-sm transition hover:border-slate-300 hover:bg-slate-50"
+          (click)="get404Error()"
+        >
+          404 Not Found
+        </button>
+        <button
+          type="button"
+          class="w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-700 shadow-sm transition hover:border-slate-300 hover:bg-slate-50"
+          (click)="get400ValidationError()"
+        >
+          400 Validation
+        </button>
+      </div>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+      <div class="flex items-start justify-between">
+        <div>
+          <h2 class="text-lg font-semibold text-slate-900">Errori server</h2>
+          <p class="mt-1 text-sm text-slate-600">Simula eccezioni e risposte 5xx.</p>
+        </div>
+        <span class="rounded-full bg-rose-100 px-3 py-1 text-xs font-semibold text-rose-700"
+          >5xx</span
+        >
+      </div>
+
+      <div class="mt-6">
+        <button
+          type="button"
+          class="w-full rounded-xl border border-rose-200 bg-rose-50 px-4 py-3 text-sm font-semibold text-rose-700 shadow-sm transition hover:border-rose-300 hover:bg-rose-100"
+          (click)="get500Error()"
+        >
+          500 Server Error
+        </button>
+      </div>
+    </article>
+  </div>
+</section>
