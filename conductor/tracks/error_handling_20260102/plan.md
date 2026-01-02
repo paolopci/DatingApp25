@@ -7,11 +7,11 @@
     - Dettagli: Assicurarsi che il servizio custom sia pronto all'uso e importato correttamente.
 
 ## Phase 2: Error Interceptor Implementation
-- [ ] Task: Implementare la logica base per `400` e `401`.
+- [x] Task: Implementare la logica base per `400` e `401`. [b19713a]
     - Dettagli: Aggiornare `error-interceptor.ts` per gestire questi codici usando `ToastService`.
-- [ ] Task: Implementare la gestione `404`.
+- [x] Task: Implementare la gestione `404`. [b19713a]
     - Dettagli: Aggiungere il reindirizzamento al router `/not-found`.
-- [ ] Task: Implementare la gestione `500` con State Transfer.
+- [x] Task: Implementare la gestione `500` con State Transfer. [b19713a]
     - Dettagli: Reindirizzare a `/server-error` passando `error.error` (dettagli eccezione) nel `NavigationExtras`.
     - Dettagli: Aggiornare `ServerErrorComponent` per leggere e mostrare lo stato del router (se presente).
 
