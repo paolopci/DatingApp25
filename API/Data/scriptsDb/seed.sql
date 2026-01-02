@@ -25,6 +25,9 @@ DECLARE @Profiles TABLE (
     ImageUrl NVARCHAR(MAX)
 );
 
+-- Ensure table is empty
+DELETE FROM @Profiles;
+
 INSERT INTO @Profiles (DisplayName, Email, Gender, DateOfBirth, City, Country, ImageUrl)
 VALUES 
 ('Paolo Paci', 'paolo.paci@example.com', 'male', '1965-01-10', 'Pesaro', 'Italy', 'https://randomuser.me/api/portraits/men/50.jpg'),
@@ -51,17 +54,17 @@ VALUES
 
 -- 2. Insert into Users
 INSERT INTO Users (Id, DisplayName, Email, ImageUrl, PasswordHash, PasswordSalt)
-SELECT CAST(Id AS NVARCHAR(450)), DisplayName, Email, ImageUrl, @PasswordHash, @PasswordSalt
+SELECT LOWER(CAST(Id AS NVARCHAR(450))), DisplayName, LOWER(LTRIM(RTRIM(Email))), ImageUrl, @PasswordHash, @PasswordSalt
 FROM @Profiles;
 
 -- 3. Insert into Members
 INSERT INTO Members (Id, DisplayName, Gender, DateOfBirth, Created, LastActive, City, Country, ImageUrl, Description)
-SELECT CAST(Id AS NVARCHAR(450)), DisplayName, Gender, DateOfBirth, GETUTCDATE(), GETUTCDATE(), City, Country, ImageUrl, 'Ciao! Mi chiamo ' + DisplayName + ' e sono felice di essere qui.'
+SELECT LOWER(CAST(Id AS NVARCHAR(450))), DisplayName, Gender, DateOfBirth, GETUTCDATE(), GETUTCDATE(), City, Country, ImageUrl, 'Ciao! Mi chiamo ' + DisplayName + ' e sono felice di essere qui.'
 FROM @Profiles;
 
 -- 4. Insert into Photos (Profile photos)
 INSERT INTO Photos (Url, MemberId)
-SELECT ImageUrl, CAST(Id AS NVARCHAR(450))
+SELECT ImageUrl, LOWER(CAST(Id AS NVARCHAR(450)))
 FROM @Profiles;
 
 COMMIT TRANSACTION;
