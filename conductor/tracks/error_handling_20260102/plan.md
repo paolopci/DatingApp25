@@ -16,9 +16,9 @@
     - Dettagli: Aggiornare `ServerErrorComponent` per leggere e mostrare lo stato del router (se presente).
 
 ## Phase 3: Integration & Testing
-- [ ] Task: Integrare l'interceptor in `app.config.ts`.
+- [x] Task: Integrare l'interceptor in `app.config.ts`. [a727d05]
     - Dettagli: Assicurarsi che `provideHttpClient(withInterceptors([errorInterceptor]))` sia configurato.
-- [ ] Task: Verifica manuale con `TestErrors`.
+- [x] Task: Verifica manuale con `TestErrors`. [a727d05]
     - Dettagli: Utilizzare i pulsanti del componente esistente per scatenare gli errori e verificare il comportamento UI.
 
 ## Phase 4: Finalization
