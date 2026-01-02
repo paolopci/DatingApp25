@@ -9,3 +9,7 @@ This file tracks all major tracks for the project. Each track has its own detail
 
 ## [x] Track: Implementazione della Navbar Responsive con Switcher del Tema e Menu Navigazione
 *Link: [./conductor/tracks/navbar_20251227/](./conductor/tracks/navbar_20251227/)*
+---
+
+## [x] Track: Member Repository in API/Data/Repositories
+*Link: [./conductor/tracks/member_repository_20260102/](./conductor/tracks/member_repository_20260102/)*

@@ -32,6 +32,6 @@ namespace API.Entities
         [ForeignKey(nameof(Id))]
         public AppUser User { get; set; } = null!;
 
-
+        public ICollection<Photo> Photos { get; set; } = [];
     }
 }
