@@ -1,9 +1,9 @@
 # Plan: Error Handling Centralizzato
 
 ## Phase 1: Setup & Infrastructure
-- [ ] Task: Creare i componenti `NotFoundComponent` e `ServerErrorComponent`.
+- [x] Task: Creare i componenti `NotFoundComponent` e `ServerErrorComponent`. [3226bc7]
     - Dettagli: Generare i componenti, aggiungerli alle rotte dell'app (`app.routes.ts`) e creare un layout di base.
-- [ ] Task: Verificare e predisporre `ToastService`.
+- [x] Task: Verificare e predisporre `ToastService`. [3226bc7]
     - Dettagli: Assicurarsi che il servizio custom sia pronto all'uso e importato correttamente.
 
 ## Phase 2: Error Interceptor Implementation
