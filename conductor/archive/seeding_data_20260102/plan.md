@@ -9,5 +9,6 @@
 - [x] **Task 2.1: Sviluppo `seed.sql`** (4488f2e)
 - [x] Task: Conductor - User Manual Verification 'Generazione Script' (Protocol in workflow.md) (4488f2e)
 
-## Fase 3: Verifica
-- [~] **Task 3.1: Validazione finale dello script**
+## Fase 3: Verifica [checkpoint: 2d73f77]
+- [x] **Task 3.1: Validazione finale dello script** (2d73f77)
+- [x] Task: Conductor - User Manual Verification 'Verifica Finale' (Protocol in workflow.md) (2d73f77)

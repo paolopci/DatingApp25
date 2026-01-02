@@ -27,6 +27,7 @@ DECLARE @Profiles TABLE (
 
 INSERT INTO @Profiles (DisplayName, Email, Gender, DateOfBirth, City, Country, ImageUrl)
 VALUES 
+('Paolo Paci', 'paolo.paci@example.com', 'male', '1965-01-10', 'Pesaro', 'Italy', 'https://randomuser.me/api/portraits/men/50.jpg'),
 ('Mario Rossi', 'mario.rossi@Example.com', 'male', '1985-05-12', 'Roma', 'Italy', 'https://randomuser.me/api/portraits/men/1.jpg'),
 ('Luca Bianchi', 'luca.bianchi@Example.com', 'male', '1990-08-22', 'Milano', 'Italy', 'https://randomuser.me/api/portraits/men/2.jpg'),
 ('Andrea Verdi', 'andrea.verdi@Example.com', 'male', '1988-11-05', 'Napoli', 'Italy', 'https://randomuser.me/api/portraits/men/3.jpg'),
