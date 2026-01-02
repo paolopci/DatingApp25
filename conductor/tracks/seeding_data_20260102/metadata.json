@@ -1,0 +1,8 @@
+{
+  "track_id": "seeding_data_20260102",
+  "type": "feature",
+  "status": "new",
+  "created_at": "2026-01-02T15:00:00Z",
+  "updated_at": "2026-01-02T15:00:00Z",
+  "description": "Seeding data: creazione di uno script seed.sql con 20 utenti (10M, 10F) e password 'Micene@65'."
+}

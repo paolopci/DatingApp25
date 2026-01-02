@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace API.Entities
 {
@@ -27,6 +28,8 @@ namespace API.Entities
         public string Country { get; set; }
 
         // Navigation property
+
+        [ForeignKey(nameof(Id))]
         public AppUser User { get; set; } = null!;
 
 
