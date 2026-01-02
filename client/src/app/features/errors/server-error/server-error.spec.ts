@@ -1,5 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { provideRouter } from '@angular/router';
+import { By } from '@angular/platform-browser';
 
 import { ServerError } from './server-error';
 
@@ -16,15 +17,15 @@ describe('ServerError', () => {
 
     fixture = TestBed.createComponent(ServerError);
     component = fixture.componentInstance;
-    await fixture.whenStable();
+    fixture.detectChanges();
   });
 
   it('should create', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should display Internal Server Error message', () => {
+  it('should display friendly error message', () => {
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h4')?.textContent).toContain('Internal Server Error');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Ops! Qualcosa è andato storto');
   });
 });

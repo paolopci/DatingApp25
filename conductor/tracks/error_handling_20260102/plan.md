@@ -22,6 +22,6 @@
     - Dettagli: Utilizzare i pulsanti del componente esistente per scatenare gli errori e verificare il comportamento UI.
 
 ## Phase 4: Finalization
-- [ ] Task: Refactoring e pulizia.
+- [x] Task: Refactoring e pulizia. [a727d05]
     - Dettagli: Rimuovere log non necessari e verificare il rispetto dello stile del codice.
-- [ ] Task: Conductor - User Manual Verification 'Finalization' (Protocol in workflow.md)
+- [x] Task: Conductor - User Manual Verification 'Finalization' (Protocol in workflow.md) [a727d05]
