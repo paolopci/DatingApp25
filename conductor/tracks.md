@@ -12,5 +12,5 @@ This file tracks all major tracks for the project. Each track has its own detail
 
 ---
 
-## [ ] Track: Seeding data, 20 profili con password Micene@65
+## [~] Track: Seeding data, 20 profili con password Micene@65
 *Link: [./conductor/tracks/seeding_data_20260102/](./conductor/tracks/seeding_data_20260102/)*

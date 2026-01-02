@@ -1,10 +1,8 @@
 # Piano di Implementazione: Seeding Dati tramite Script SQL
 
 ## Fase 1: Generazione Credenziali e Dati
-- [ ] **Task 1.1: Generazione Hash/Salt per "Micene@65"**
-  - Calcolare i valori binari (HMACSHA512) per la password "Micene@65" da usare nello script SQL.
-- [ ] **Task 1.2: Definizione 20 Profili**
-  - Predisporre i dati per 10 uomini e 10 donne con nomi realistici e email `nome.cognome@Example.com`.
+- [x] **Task 1.1: Generazione Hash/Salt per "Micene@65"**
+- [x] **Task 1.2: Definizione 20 Profili**
 - [ ] Task: Conductor - User Manual Verification 'Preparazione' (Protocol in workflow.md)
 
 ## Fase 2: Creazione Script SQL
