@@ -59,12 +59,12 @@ describe('errorInterceptor', () => {
       error: () => {}
     });
 
-    const req = httpMock.expectOne('/test');
-    req.flush(errorResponse, { status: 500, statusText: 'Internal Server Error' });
-
-    // In Vitest/Jest: expect(spy).toHaveBeenCalledWith(arg1, expect.objectContaining({...}))
-    expect(routerSpy.navigateByUrl).toHaveBeenCalledWith('/server-error', expect.objectContaining({
-      state: { error: errorResponse }
+        const req = httpMock.expectOne('/test');
+        req.flush(errorResponse, { status: 500, statusText: 'Internal Server Error' });
+    
+        expect(toastServiceSpy.error).toHaveBeenCalledWith('Server Error');
+        // In Vitest/Jest: expect(spy).toHaveBeenCalledWith(arg1, expect.objectContaining({...}))    
+        expect(routerSpy.navigateByUrl).toHaveBeenCalledWith('/server-error', expect.objectContaining({      state: { error: errorResponse }
     }));
   });
 

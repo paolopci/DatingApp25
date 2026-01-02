@@ -20,6 +20,7 @@ L'applicazione si rivolge alla popolazione generale interessata a conoscere nuov
 - **Autenticazione Sicura:** Gestione degli accessi tramite JSON Web Tokens (JWT) e protezione delle rotte (Auth Guards) per garantire che solo gli utenti autorizzati accedano a contenuti sensibili.
 - **Navigazione Fluida (SPA):** Interfaccia moderna senza ricaricamento delle pagine tra le sezioni principali.
 - **Notifiche in Tempo Reale:** Sistema di avvisi "Toast" per feedback immediato su azioni dell'utente (es. login, errori, messaggi ricevuti).
+- **Resilienza e Feedback:** Gestione centralizzata degli errori HTTP con pagine dedicate (404, 500) e notifiche contestuali per garantire una navigazione senza interruzioni anche in caso di problemi tecnici.
 
 ## Roadmap Iniziale
 L'attenzione iniziale sarà focalizzata sulla solidità del sistema di autenticazione e sulla fluidità dell'esperienza di ricerca e messaggistica. Il design visivo verrà definito in una fase successiva del progetto.

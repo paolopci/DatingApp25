@@ -9,8 +9,3 @@ This file tracks all major tracks for the project. Each track has its own detail
 
 ## [x] Track: Implementazione della Navbar Responsive con Switcher del Tema e Menu Navigazione
 *Link: [./conductor/tracks/navbar_20251227/](./conductor/tracks/navbar_20251227/)*
-
----
-
-## [x] Track: ho creato un error-interceptor.ts per la gestione centralizzata degli errori, completare il codice con le best pratices
-*Link: [./conductor/tracks/error_handling_20260102/](./conductor/tracks/error_handling_20260102/)*

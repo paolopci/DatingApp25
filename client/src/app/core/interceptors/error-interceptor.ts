@@ -33,6 +33,7 @@ export const errorInterceptor: HttpInterceptorFn = (req, next) => {
             break;
           
           case 500:
+            toastService.error('Server Error');
             const navigationExtras: NavigationExtras = {state: {error: error.error}};
             router.navigateByUrl('/server-error', navigationExtras);
             break;
