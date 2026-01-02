@@ -12,7 +12,5 @@ This file tracks all major tracks for the project. Each track has its own detail
 
 ---
 
-
-
-
-
+## [ ] Track: ho creato un error-interceptor.ts per la gestione centralizzata degli errori, completare il codice con le best pratices
+*Link: [./conductor/tracks/error_handling_20260102/](./conductor/tracks/error_handling_20260102/)*
