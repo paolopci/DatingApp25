@@ -140,3 +140,8 @@ docker-compose.*.override.yml
 # Global.json (NON ignorato)
 ########################################
 # global.json va versionato intenzionalmente
+
+########################################
+# Conductor
+########################################
+conductor/
