@@ -1,5 +1,6 @@
 using API.Entities;
 using API.Interfaces;
+using API.Mappers;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -7,25 +8,28 @@ using Microsoft.AspNetCore.Mvc;
 namespace API.Controllers;
 
 
-public class MembersController(IMemberRepository memberRepository) : BaseApiController
+public class MembersController(IMemberRepository memberRepository, UserMapper mapper) : BaseApiController
 {
     [Authorize]
     [HttpGet]
-    public async Task<ActionResult<IReadOnlyList<Member>>> GetMembers()
+    public async Task<ActionResult<IReadOnlyList<MemberDto>>> GetMembers()
     {
         var members = await memberRepository.GetMembersAsync();
-        return Ok(members);
+        var membersToReturn = members.Select(mapper.MapToDto).ToList();
+        
+        return Ok(membersToReturn);
     }
 
     [Authorize]
     [HttpGet("{id}")]
-    public async Task<ActionResult<Member>> GetMember(string id)
+    public async Task<ActionResult<MemberDto>> GetMember(string id)
     {
         var member = await memberRepository.GetMemberByIdAsync(id);
         if (member == null)
         {
             return NotFound();
         }
-        return Ok(member);
+
+        return Ok(mapper.MapToDto(member));
     }
 }

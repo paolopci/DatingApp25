@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using API.Middleware;
 using API.Interfaces;
 using API.Data.Repositories;
+using API.Mappers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,15 +17,13 @@ builder.Services.AddDbContext<AppDataContext>(options =>
 
 builder.Services.AddScoped<IMemberRepository, MemberRepository>();
 
+builder.Services.AddSingleton<UserMapper>();
+
 builder.Services.AddCorsPolicies();
 
 builder.Services.AddJwtAuthentication(builder.Configuration);
 
-builder.Services.AddControllers()
-    .AddJsonOptions(options => 
-    {
-        options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles;
-    });
+builder.Services.AddControllers();
 
 var app = builder.Build();
 
