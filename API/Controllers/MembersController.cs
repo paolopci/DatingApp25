@@ -1,32 +1,35 @@
-using API.Data;
 using API.Entities;
+using API.Interfaces;
+using API.Mappers;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
 
 namespace API.Controllers;
 
 
-public class MembersController(AppDataContext context) : BaseApiController
+public class MembersController(IMemberRepository memberRepository, UserMapper mapper) : BaseApiController
 {
     [Authorize]
     [HttpGet]
-    public async Task<ActionResult<IReadOnlyList<AppUser>>> GetMembers()
+    public async Task<ActionResult<IReadOnlyList<MemberDto>>> GetMembers()
     {
-        var members = await context.Users.ToListAsync();
-        return Ok(members);
+        var members = await memberRepository.GetMembersAsync();
+        var membersToReturn = members.Select(mapper.MapToDto).ToList();
+        
+        return Ok(membersToReturn);
     }
 
     [Authorize]
     [HttpGet("{id}")]
-    public async Task<ActionResult<AppUser>> GetMember(string id)
+    public async Task<ActionResult<MemberDto>> GetMember(string id)
     {
-        var member = await context.Users.FindAsync(id);
+        var member = await memberRepository.GetMemberByIdAsync(id);
         if (member == null)
         {
             return NotFound();
         }
-        return Ok(member);
+
+        return Ok(mapper.MapToDto(member));
     }
 }

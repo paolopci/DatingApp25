@@ -3,6 +3,10 @@
 ########################################
 .DS_Store
 Thumbs.db
+errore.png
+errore2.png
+image.png
+
 
 ########################################
 # Visual Studio / VS Code
@@ -136,3 +140,8 @@ docker-compose.*.override.yml
 # Global.json (NON ignorato)
 ########################################
 # global.json va versionato intenzionalmente
+
+########################################
+# Conductor
+########################################
+conductor/

@@ -3,6 +3,9 @@ using API.Extensions;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using API.Middleware;
+using API.Interfaces;
+using API.Data.Repositories;
+using API.Mappers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +14,11 @@ builder.Services.AddDbContext<AppDataContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("ApiConnection"));
 });
+
+builder.Services.AddScoped<IMemberRepository, MemberRepository>();
+
+builder.Services.AddSingleton<UserMapper>();
+
 builder.Services.AddCorsPolicies();
 
 builder.Services.AddJwtAuthentication(builder.Configuration);
