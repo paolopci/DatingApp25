@@ -1,8 +1,0 @@
-{
-  "track_id": "error_handling_20260102",
-  "type": "feature",
-  "status": "new",
-  "created_at": "2026-01-02T08:48:00Z",
-  "updated_at": "2026-01-02T08:48:00Z",
-  "description": "ho creato un error-interceptor.ts per la gestione centralizzata degli errori, completare il codice con le best pratices"
-}
